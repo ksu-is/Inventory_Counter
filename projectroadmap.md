@@ -8,4 +8,4 @@
 
 5: Begin develop code to get The Inventory Counter started -11/10/20
 
-6: Have gretting and sign-in finished -11/10/20                                                              
+6: Have greeting and sign-in finished -11/10/20                                                              
