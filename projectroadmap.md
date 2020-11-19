@@ -2,20 +2,28 @@
 
 1: [x]Research project Ideas - 10/23/20
 
-2:[x] Create ReadMe in repository explaining project objective of Iventory_Counter - 11/6/20
+2: [x] Create ReadMe in repository explaining project objective of Iventory_Counter 
 
-3: [x]Search GitHub & other resources for respositories that would be useful for project - 11/6/20
+3: [x]Search GitHub & other resources for respositories that would be useful for project 
 
-4:[x] Created projectroadmap.md with listed objected for project - 11/6/20
+4: [x] Created projectroadmap.md with listed objected for project 
 
-5: [x]Begin develop code to get The Inventory Counter started -11/10/20
+5: [x]Begin develop code to get The Inventory Counter started 
 
-6: []Have greeting and sign-in finished -11/10/20                                                              
+6: [x]Have greeting and sign-in finished                                                          
 
 #Sprint #2 
 
-1: []Compare code with forked repository
+1: [x]Compare code with forked repository
 
-2: []Find two outside sources to help with project (URL)
+2: [x]Create Instore inventory bank (What we have in stock)
 
-3: []Test code
+3: [x]Created sign-in for Employees and shoppers, to display proper options
+
+4: [x]Test code
+
+#Sprint #3
+
+1: []Finalize inventory bank details
+
+2: []Finalize employee and shopper options 
