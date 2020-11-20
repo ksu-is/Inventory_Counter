@@ -16,7 +16,7 @@
 
 1: [x]Compare code with forked repository
 
-2: [x]Create Instore inventory bank (What we have in stock)
+2: [x]Create in store inventory bank (What we have in stock)
 
 3: [x]Created sign-in for Employees and shoppers, to display proper options
 
