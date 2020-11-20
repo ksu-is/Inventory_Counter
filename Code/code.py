@@ -13,7 +13,6 @@ name = input()
 username = 'Employee'
 username2 = 'Shopper'
 
-
 if name == (username):
     print('Please wait...')
     time.sleep(1)
