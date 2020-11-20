@@ -1,6 +1,6 @@
 #Sprint #1
 
-1: [x]Research project Ideas - 10/23/20
+1: [x]Research project Ideas 
 
 2: [x] Create ReadMe in repository explaining project objective of Iventory_Counter 
 
