@@ -61,7 +61,7 @@ if choice=='1':
         
 
     run = menu()
-    shirts_stock = {'small':10, 'medium':10, 'large':15, 'xlarge':5}
+    shirts_stock = [10, 12, 15, 5]
     pants_stock = {'small':10, 'medium':10, 'large':20, 'xlarge':6}
     hats_stock = {'red':5, 'orange':0, 'yellow':2, 'black':10, 'white':9}
     add_to = input("What item are you restocking?")
@@ -75,20 +75,27 @@ if choice=='1':
             print ("Press XL: xLarge Shirt.")
             print("Press q: To quit the program.")
             
-        wht_size=input("What size shirt would you like to restock: ")
+        wht_size1=input("What size shirt would you like to restock: ")
+        wht_size = wht_size1.upper()
         if wht_size=='S':     
             amount= int(input("How many shirts woould you like to add?:" ))
-            shirts_stock[wht_size] += amount
+            shirts_stock[0]= shirts_stock[0] + amount
+            print("Your updated inventory is",shirts_stock[0])
         elif wht_size=='M':
-            print ("Menu 2 has been selected")
-            ## You can add your code or functions here
+            amount= int(input("How many shirts woould you like to add?:" ))
+            shirts_stock[1]= shirts_stock[1] + amount
+            print("Your updated inventory is",shirts_stock[1])
         elif wht_size=='L':
-            print ("Menu 3 has been selected")
-            ## You can add your code or functions here
+            amount= int(input("How many shirts woould you like to add?:" ))
+            shirts_stock[2]= shirts_stock[2] + amount
+            print("Your updated inventory is",shirts_stock[2])
         elif wht_size=='XL':
-            print ("Menu 4 has been selected")
-            ## You can add your code or functions here
-            amount= int(input(XX))
+            amount= int(input("How many shirts woould you like to add?:" ))
+            shirts_stock[3]= shirts_stock[3] + amount
+            print("Your updated inventory is",shirts_stock[3])
+        else:
+            print("Invalid Input!")
+            exit
             
     elif up_add=="P":
         def menu():
@@ -101,7 +108,7 @@ if choice=='1':
         wht_size=input("What size shirt would you like to restock: ")
         if wht_size=='S':     
             amount= int(input("How many shirts woould you like to add?:" ))
-            shirts_stock[wht_size] += amount
+            
         elif wht_size=='M':
             print ("Menu 2 has been selected")
             ## You can add your code or functions here
