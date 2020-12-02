@@ -4,9 +4,9 @@ print("Welcome to the Inventory Counter!")
 time.sleep(1.5)
 print("Please enter your username.")
 
-shirts_stock = ['small:10', 'medium:10', 'large:15', 'xlarge:5']
-pants_stock = ['small:10', 'medium:10', 'large:15', 'xlarge:5']
-hats_stock = ['red:5', 'orange:0', 'yellow:2', 'black:10', 'white:9']
+shirts_stock = {'small':10, 'medium':10, 'large':15, 'xlarge':5}
+pants_stock = {'small':10, 'medium':10, 'large':20, 'xlarge':6}
+hats_stock = {'red':5, 'orange':0, 'yellow':2, 'black':10, 'white':9}
 
 name = input()
 
@@ -48,8 +48,9 @@ if name == (username2):
     print('Please wait...')
     time.sleep(1)
     print('')
+
+#add next step
 def menu():
-    print('Welcome, what are you shopping for today?')
     print ("Press S: Check inventory of Shirts.")
     print ("Press P: Check inventory of Pants.")
     print ("Press H: Check inventory of Hats.")
@@ -60,14 +61,16 @@ run = menu()
 shirts_stock = ("small:10, medium:10, large:15, xlarge:5")
 pants_stock = ("small:10, medium:10, large:20, xlarge:6")
 hats_stock = ("red:5, orange:0, yellow:2, black:10, white:9")
-entry=input("What would you like to do?")
-if entry =="S":
+entry=input("What would you like to do? ")
+cap_entry = entry.upper()
+
+if cap_entry=="S":
     print(shirts_stock)
-elif entry =="P":
+elif cap_entryy =="P":
     print(pants_stock)
-elif entry =="H":
+elif cap_entry =="H":
     print(hats_stock)
-elif entry == "q":
+elif cap_entry == "q":
     quit
 else:
     print("Invalid Input!")
