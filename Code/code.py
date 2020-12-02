@@ -58,18 +58,18 @@ def menu():
    
 
 run = menu()
-shirts_stock = ("small:10, medium:10, large:15, xlarge:5")
-pants_stock = ("small:10, medium:10, large:20, xlarge:6")
-hats_stock = ("red:5, orange:0, yellow:2, black:10, white:9")
+shirts_stock2 = ("small:10, medium:10, large:15, xlarge:5")
+pants_stock2 = ("small:10, medium:10, large:20, xlarge:6")
+hats_stock2 = ("red:5, orange:0, yellow:2, black:10, white:9")
 entry=input("What would you like to do? ")
 cap_entry = entry.upper()
 
 if cap_entry=="S":
-    print(shirts_stock)
-elif cap_entryy =="P":
-    print(pants_stock)
+    print(shirts_stock2)
+elif cap_entry =="P":
+    print(pants_stock2)
 elif cap_entry =="H":
-    print(hats_stock)
+    print(hats_stock2)
 elif cap_entry == "q":
     quit
 else:
