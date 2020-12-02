@@ -4,9 +4,7 @@ print("Welcome to the Inventory Counter!")
 time.sleep(1.5)
 print("Please enter your username.")
 
-shirts_stock = {'small':10, 'medium':10, 'large':15, 'xlarge':5}
-pants_stock = {'small':10, 'medium':10, 'large':20, 'xlarge':6}
-hats_stock = {'red':5, 'orange':0, 'yellow':2, 'black':10, 'white':9}
+
 
 name = input()
 
@@ -55,7 +53,32 @@ choice = input("What would you like to do? ")
      
 if choice=='1':     
     print ("add stock has been selected:")
-        ## addstock functions here
+    def menu():
+        print ("Press S: Add inventory to Shirts.")
+        print ("Press P: Add inventory to Pants.")
+        print ("Press H: Add inventory to Hats.")
+        print("Press q: To quit the program.")
+        
+
+        run = menu()
+        shirts_stock = {'small':10, 'medium':10, 'large':15, 'xlarge':5}
+        pants_stock = {'small':10, 'medium':10, 'large':20, 'xlarge':6}
+        hats_stock = {'red':5, 'orange':0, 'yellow':2, 'black':10, 'white':9}
+        add_to = input("What would you like to do?")
+        up_add = add_to.upper()
+
+        if up_add=="S":
+            #add function for shirts
+        elif up_add =="P":
+            #add function for pants
+        elif up_add =="H":
+            #add function for hats
+        elif up_add == "Q":
+            print ("Quitting the program...Goodbye")
+            exit 
+        else:
+            print("Invalid Input!")
+            exit
 elif choice=='2':
     print ("check stock has been selected: ")
     def menu():
@@ -78,10 +101,12 @@ elif choice=='2':
             print(pants_stock2)
     elif cap_entry =="H":
             print(hats_stock2)
-    elif cap_entry == "q":
-            quit
+    elif cap_entry == "Q":
+            print ("Quitting the program...Goodbye")
+            exit 
     else:
             print("Invalid Input!")
+            exit
 elif choice=='3':
     print ("remove stock has been selected")
         ## add remove stock functions here
@@ -90,5 +115,6 @@ elif choice=='q':
     exit 
 else:
     print("Invalid Input!")
+    exit
 
     
