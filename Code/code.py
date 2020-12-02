@@ -4,9 +4,9 @@ print("Welcome to the Inventory Counter!")
 time.sleep(1.5)
 print("Please enter your username.")
 
-shirts_stock = {'small':10, 'medium':10, 'large':15, 'xlarge':5}
-pants_stock = {'small':10, 'medium':10, 'large':15, 'xlarge':5}
-hats_stock = {'red':5, 'orange':0, 'yellow':2, 'black':10, 'white':9}
+shirts_stock = ['small:10', 'medium:10', 'large:15', 'xlarge:5']
+pants_stock = ['small:10', 'medium:10', 'large:15', 'xlarge:5']
+hats_stock = ['red:5', 'orange:0', 'yellow:2', 'black:10', 'white:9']
 
 name = input()
 
@@ -50,23 +50,24 @@ if name == (username2):
     print('')
 def menu():
     print('Welcome, what are you shopping for today?')
-    print ("Press 1: Check inventory of Shirts.")
-    print ("Press 2: Check inventory of Pants.")
-    print ("Press 3: Check inventory of Hats.")
+    print ("Press S: Check inventory of Shirts.")
+    print ("Press P: Check inventory of Pants.")
+    print ("Press H: Check inventory of Hats.")
     print("Press q: To quit the program.")
-    return input ("What would you like to do? ")
+   
 
 run = menu()
-
-while True:
-    if run == "1":
-        s_size = input('What size shirt are you looking for?')
-    def menu():
-        print("Press S: Small")
-        print("Press M: Medium")
-        print("Press L: Large")
-        print("Press XL: Xlarge")
-        run = menu()
-      
-
-
+shirts_stock = ("small:10, medium:10, large:15, xlarge:5")
+pants_stock = ("small:10, medium:10, large:20, xlarge:6")
+hats_stock = ("red:5, orange:0, yellow:2, black:10, white:9")
+entry=input("What would you like to do?")
+if entry =="S":
+    print(shirts_stock)
+elif entry =="P":
+    print(pants_stock)
+elif entry =="H":
+    print(hats_stock)
+elif entry == "q":
+    quit
+else:
+    print("Invalid Input!")
