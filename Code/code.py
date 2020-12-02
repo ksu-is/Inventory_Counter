@@ -52,7 +52,7 @@ if name == (username2):
 choice = input("What would you like to do? ")
      
 if choice=='1':     
-    print ("add stock has been selected:")
+    print ("Add stock has been selected:")
     def menu():
         print ("Press S: Add inventory to Shirts.")
         print ("Press P: Add inventory to Pants.")
@@ -64,7 +64,7 @@ if choice=='1':
         shirts_stock = {'small':10, 'medium':10, 'large':15, 'xlarge':5}
         pants_stock = {'small':10, 'medium':10, 'large':20, 'xlarge':6}
         hats_stock = {'red':5, 'orange':0, 'yellow':2, 'black':10, 'white':9}
-        add_to = input("What would you like to do?")
+        add_to = input("What item are you restocking?")
         up_add = add_to.upper()
 
         if up_add=="S":
