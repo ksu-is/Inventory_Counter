@@ -60,25 +60,85 @@ if choice=='1':
         print("Press q: To quit the program.")
         
 
-        run = menu()
-        shirts_stock = {'small':10, 'medium':10, 'large':15, 'xlarge':5}
-        pants_stock = {'small':10, 'medium':10, 'large':20, 'xlarge':6}
-        hats_stock = {'red':5, 'orange':0, 'yellow':2, 'black':10, 'white':9}
-        add_to = input("What item are you restocking?")
-        up_add = add_to.upper()
+    run = menu()
+    shirts_stock = {'small':10, 'medium':10, 'large':15, 'xlarge':5}
+    pants_stock = {'small':10, 'medium':10, 'large':20, 'xlarge':6}
+    hats_stock = {'red':5, 'orange':0, 'yellow':2, 'black':10, 'white':9}
+    add_to = input("What item are you restocking?")
+    up_add = add_to.upper()
+   
+    if up_add=="S":
+        def menu():
+            print ("Press S: Small Shirt.")
+            print ("Press M: Medium Shirt.")
+            print ("Press L: Large Shirt.")
+            print ("Press XL: xLarge Shirt.")
+            print("Press q: To quit the program.")
+            
+        wht_size=input("What size shirt would you like to restock: ")
+        if wht_size=='S':     
+            amount= int(input("How many shirts woould you like to add?:" ))
+            shirts_stock[wht_size] += amount
+        elif wht_size=='M':
+            print ("Menu 2 has been selected")
+            ## You can add your code or functions here
+        elif wht_size=='L':
+            print ("Menu 3 has been selected")
+            ## You can add your code or functions here
+        elif wht_size=='XL':
+            print ("Menu 4 has been selected")
+            ## You can add your code or functions here
+            amount= int(input(XX))
+            
+    elif up_add=="P":
+        def menu():
+            print ("Press S: Small Shirt.")
+            print ("Press M: Medium Shirt.")
+            print ("Press L: Large Shirt.")
+            print ("Press XL: xLarge Shirt.")
+            print("Press q: To quit the program.")
+            
+        wht_size=input("What size shirt would you like to restock: ")
+        if wht_size=='S':     
+            amount= int(input("How many shirts woould you like to add?:" ))
+            shirts_stock[wht_size] += amount
+        elif wht_size=='M':
+            print ("Menu 2 has been selected")
+            ## You can add your code or functions here
+        elif wht_size=='L':
+            print ("Menu 3 has been selected")
+            ## You can add your code or functions here
+        elif wht_size=='XL':
+            print ("Menu 4 has been selected")
+            ## You can add your code or functions here
+    elif up_add =="H":
+        def menu():
+            print ("Press S: Small Shirt.")
+            print ("Press M: Medium Shirt.")
+            print ("Press L: Large Shirt.")
+            print ("Press XL: xLarge Shirt.")
+            print("Press q: To quit the program.")
+            
+        wht_size=input("What size shirt would you like to restock: ")
+        if wht_size=='S':     
+            amount= int(input("How many shirts woould you like to add?:" ))
+            shirts_stock[wht_size] += amount
+        elif wht_size=='M':
+            print ("Menu 2 has been selected")
+            ## You can add your code or functions here
+        elif wht_size=='L':
+            print ("Menu 3 has been selected")
+            ## You can add your code or functions here
+        elif wht_size=='XL':
+            print ("Menu 4 has been selected")
+            ## You can add your code or functions here
+    elif up_add == "Q":
+        print ("Quitting the program...Goodbye")
+        exit 
+    else:
+        print("Invalid Input!")
+        exit
 
-        if up_add=="S":
-            #add function for shirts
-        elif up_add =="P":
-            #add function for pants
-        elif up_add =="H":
-            #add function for hats
-        elif up_add == "Q":
-            print ("Quitting the program...Goodbye")
-            exit 
-        else:
-            print("Invalid Input!")
-            exit
 elif choice=='2':
     print ("check stock has been selected: ")
     def menu():
@@ -118,3 +178,4 @@ else:
     exit
 
     
+
