@@ -34,7 +34,9 @@ if password == (password1):
     print ("Press 2: To check stock. ")
     print ("Press 3: To remove stock. ")
     print ("Press q: To quit the program. ")
-    input ("What would you like to do? ")
+    
+    
+    
 
 if name != (username):
     print('Please wait')
@@ -49,28 +51,44 @@ if name == (username2):
     time.sleep(1)
     print('')
 
-#add next step
-def menu():
-    print ("Press S: Check inventory of Shirts.")
-    print ("Press P: Check inventory of Pants.")
-    print ("Press H: Check inventory of Hats.")
-    print("Press q: To quit the program.")
-   
+choice = input("What would you like to do? ")
+     
+if choice=='1':     
+    print ("add stock has been selected:")
+        ## addstock functions here
+elif choice=='2':
+    print ("check stock has been selected: ")
+    def menu():
+        print ("Press S: Check inventory of Shirts.")
+        print ("Press P: Check inventory of Pants.")
+        print ("Press H: Check inventory of Hats.")
+        print("Press q: To quit the program.")
+        
 
-run = menu()
-shirts_stock2 = ("small:10, medium:10, large:15, xlarge:5")
-pants_stock2 = ("small:10, medium:10, large:20, xlarge:6")
-hats_stock2 = ("red:5, orange:0, yellow:2, black:10, white:9")
-entry=input("What would you like to do? ")
-cap_entry = entry.upper()
+    run = menu()
+    shirts_stock2 = ("small:10, medium:10, large:15, xlarge:5")
+    pants_stock2 = ("small:10, medium:10, large:20, xlarge:6")
+    hats_stock2 = ("red:5, orange:0, yellow:2, black:10, white:9")
+    entry=input("What would you like to do? ")
+    cap_entry = entry.upper()
 
-if cap_entry=="S":
-    print(shirts_stock2)
-elif cap_entry =="P":
-    print(pants_stock2)
-elif cap_entry =="H":
-    print(hats_stock2)
-elif cap_entry == "q":
-    quit
+    if cap_entry=="S":
+            print(shirts_stock2)
+    elif cap_entry =="P":
+            print(pants_stock2)
+    elif cap_entry =="H":
+            print(hats_stock2)
+    elif cap_entry == "q":
+            quit
+    else:
+            print("Invalid Input!")
+elif choice=='3':
+    print ("remove stock has been selected")
+        ## add remove stock functions here
+elif choice=='q':
+    print ("Quitting the program...Goodbye")
+    exit 
 else:
     print("Invalid Input!")
+
+    
