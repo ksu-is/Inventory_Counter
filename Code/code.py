@@ -68,7 +68,7 @@ if choice=='1':
     run = menu()
     shirts_stock = [10, 12, 15, 5]
     pants_stock = [10, 10, 20, 6]
-    hats_stock = [5, 0, 10, 9]
+    hats_stock = [5, 15, 10, 9]
     add_to = input("What item are you restocking?")
     up_add = add_to.upper()
    
