@@ -16,8 +16,7 @@ if name == (username):
     print('Please wait...')
     time.sleep(1)
     print('')
-    password = input('Correct, please enter your password.')   
-    
+    password = input('Correct, please enter your password:\n')   
     
     password1 = 'Admin'
     if password == (password1):
@@ -143,15 +142,15 @@ if choice=='1':
             amount= int(input("How many hats would you like to add?:" ))
             hats_stock[0]= hats_stock[0] + amount
             print("Your updated inventory is",hats_stock[0])
-        elif wht_size=='B':
+        elif wht_color=='B':
             amount= int(input("How many hats would you like to add?:" ))
             hats_stock[1]= hats_stock[1] + amount
             print("Your updated inventory is",hats_stock[1])
-        elif wht_size=='O':
+        elif wht_color=='O':
             amount= int(input("How many hats would you like to add?:" ))
             hats_stock[2]= hats_stock[2] + amount
             print("Your updated inventory is",hats_stock[2])
-        elif wht_size=='W':
+        elif wht_color=='W':
             amount= int(input("How many hats would you like to add?:" ))
             hats_stock[3]= hats_stock[3] + amount
             print("Your updated inventory is",hats_stock[3])
