@@ -11,15 +11,15 @@ username = 'Employee'
 username2 ='Customer'
 
 
+
 if name == (username):
     print('Please wait...')
     time.sleep(1)
     print('')
     password = input('Correct, please enter your password.')   
     
-    password = input()
-    password1 = 'Admin'  
-
+    
+    password1 = 'Admin'
     if password == (password1):
         print('Please wait...')
         time.sleep(1)
@@ -31,6 +31,9 @@ if name == (username):
         print ("Press 2: To check stock. ")
         print ("Press 3: To remove stock. ")
         print ("Press q: To quit the program. ")
+    
+         
+
     else:
         print("Incorrect Password...Goodbye")
         exit
