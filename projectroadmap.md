@@ -24,6 +24,12 @@
 
 #Sprint #3
 
-1: []Finalize inventory bank details
+1: [x]Finalize inventory bank details
 
-2: []Finalize employee and shopper options 
+2: [x]Finalize employee and shopper options 
+
+3.[x]Finish Code
+
+4.[x]Make PPT Slide
+
+5.[]Prep for presentation
