@@ -7,47 +7,50 @@ print("Please enter your username.")
 
 
 name = input()
-
 username = 'Employee'
-username2 = 'Shopper'
+username2 ='Customer'
+
 
 if name == (username):
     print('Please wait...')
     time.sleep(1)
     print('')
-    print('Correct, please enter your password.')    
+    password = input('Correct, please enter your password.')   
     
-password = input()
+    password = input()
+    password1 = 'Admin'  
 
-password1 = 'Admin'
+    if password == (password1):
+        print('Please wait...')
+        time.sleep(1)
+        print('')
+        print('Correct, logging in.')
+        time.sleep(1)
+        print('Welcome '+username)    
+        print ("Press 1: To add stock. ")
+        print ("Press 2: To check stock. ")
+        print ("Press 3: To remove stock. ")
+        print ("Press q: To quit the program. ")
+    else:
+        print("Incorrect Password...Goodbye")
+        exit
 
-if password == (password1):
+
+elif name == (username2):
     print('Please wait...')
     time.sleep(1)
     print('')
-    print('Correct, logging in.')
-    time.sleep(1)
-    print('Welcome '+username)    
-    print ("Press 1: To add stock. ")
+    print('Welcome '+username2)
     print ("Press 2: To check stock. ")
-    print ("Press 3: To remove stock. ")
     print ("Press q: To quit the program. ")
-    
-    
-    
 
-if name != (username):
+else:
     print('Please wait')
     time.sleep(1)
     print('')
     print('Unauthorized personnel, please enjoy looking through our products!')
     time.sleep(1)
     exit
-
-if name == (username2):
-    print('Please wait...')
-    time.sleep(1)
-    print('')
 
 choice = input("What would you like to do? ")
      
@@ -157,7 +160,7 @@ if choice=='1':
         exit
 
 elif choice=='2':
-    print ("check stock has been selected: ")
+    print ("Check stock has been selected: ")
     def menu():
         print ("Press S: Check inventory of Shirts.")
         print ("Press P: Check inventory of Pants.")
@@ -187,9 +190,9 @@ elif choice=='2':
 elif choice=='3':
     print ("Remove stock has been selected:")
     def menu():
-        print ("Press S: Remove inventory to Shirts.")
-        print ("Press P: Remove inventory to Pants.")
-        print ("Press H: Remove inventory to Hats.")
+        print ("Press S: Remove inventory from Shirts.")
+        print ("Press P: Remove inventory from Pants.")
+        print ("Press H: Remove inventory from Hats.")
         print("Press q: To quit the program.")
         
 
