@@ -273,19 +273,19 @@ elif choice=='3':
         wht_color = wht_color1.upper()
         if wht_color=='R':     
             amount= int(input("How many hats would you like to remove?:" ))
-            hats_stock[0]= hats_stock[0] + amount
+            hats_stock[0]= hats_stock[0] - amount
             print("Your updated inventory is",hats_stock[0])
-        elif wht_size=='B':
+        elif wht_color=='B':
             amount= int(input("How many hats would you like to remove?:" ))
-            hats_stock[1]= hats_stock[1] + amount
+            hats_stock[1]= hats_stock[1] - amount
             print("Your updated inventory is",hats_stock[1])
-        elif wht_size=='O':
+        elif wht_color=='O':
             amount= int(input("How many hats would you like to remove?:" ))
-            hats_stock[2]= hats_stock[2] + amount
+            hats_stock[2]= hats_stock[2] - amount
             print("Your updated inventory is",hats_stock[2])
-        elif wht_size=='W':
+        elif wht_color=='W':
             amount= int(input("How many hats would you like to remove?:" ))
-            hats_stock[3]= hats_stock[3] + amount
+            hats_stock[3]= hats_stock[3] - amount
             print("Your updated inventory is",hats_stock[3])
     elif up_add == "Q":
         print ("Quitting the program...Goodbye")
